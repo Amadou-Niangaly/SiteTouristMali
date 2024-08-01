@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let z of villeList; let i = index">
+        <div class="card ville">
+          <img [src]="z.image" class="card-img-top img-ville" alt="{{ z.nom }}">
+          <div class="card-body ">
+            <h5 class="card-title">{{ z.nom }}</h5>
+            <p class="card-text"><strong>Ville:</strong> {{ z.ville }}</p>
+            <p class="card-text"><strong>Pays:</strong> {{ z.pays }}</p>
+            <p class="card-text"><strong>Description:</strong> {{ z.descriptionPetit }}</p>
+            <p class="card-text"><strong>Détails:</strong> {{ z.descriptionLong }}</p>
+            <button class="btn btn-outline-primary">VOIR PLUS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

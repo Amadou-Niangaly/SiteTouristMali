@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="d-flex">
+    <div class="container">
+      <img [src]="logo" >
+    </div>
+    <div class="container mt-5">
+      <input type="search" id="search" class="search-input"  [(ngModel)]="searchText">
+      <i class="bi bi-search search-icon" [ngClass]="{'d-none': searchText.length > 0}"></i>
+    </div>
+  </div>
+  <div class="container mt-5 text-center">
+    <h1 class="h-text ">Zone Touristique au Mali</h1>
+  </div>
+</div>
+ <!-- <app-zone-tourist></app-zone-tourist>  -->
+<app-zone-tourist-list></app-zone-tourist-list>
+<footer></footer>
+<router-outlet></router-outlet>

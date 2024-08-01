@@ -1,0 +1,23 @@
+.ville{
+    border:2px solid;
+    border-color:#2454CF;
+    border-radius: 15px;
+}
+
+.img-ville{
+    
+    border-radius: 15px;
+}
+.p-prime{
+    font-weight: bold;
+}
+.card {
+    height: 35em; /* Ajustez selon vos besoins */
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  
+  .card-body {
+    flex-grow: 1; /* Permet au corps de la carte de s'étendre */
+  }
