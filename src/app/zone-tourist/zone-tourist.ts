@@ -6,4 +6,14 @@ export interface ZoneTourist {
     descriptionPetit:string;
     descriptionLong:string;
     ville:string;
+    img1?:string;
+    img2?:string;
+    img3?:string;
+    img4?:string;
+    img5?:string;
+    img6?:string;
+    img7?:string;
+    img8?:string;
+    img9?:string;
+    img10?:string;
 }

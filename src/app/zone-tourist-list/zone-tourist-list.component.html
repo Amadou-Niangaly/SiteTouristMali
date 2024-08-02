@@ -1,4 +1,7 @@
 <div class="container">
+  <div class="container mt-5 text-center">
+    <h1 class="h-text ">Zone Touristique au Mali</h1>
+  </div>
     <div class="row">
       <div class="col-md-4 mb-4" *ngFor="let z of villeList; let i = index">
         <div class="card ville">
@@ -9,7 +12,7 @@
             <p class="card-text"><strong>Pays:</strong> {{ z.pays }}</p>
             <p class="card-text"><strong>Description:</strong> {{ z.descriptionPetit }}</p>
             <p class="card-text"><strong>Détails:</strong> {{ z.descriptionLong }}</p>
-            <button class="btn btn-outline-primary">VOIR PLUS</button>
+            <a [routerLink]="['/detail',z.id]">Voir plus</a>
           </div>
         </div>
       </div>
