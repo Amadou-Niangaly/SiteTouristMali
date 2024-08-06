@@ -1,11 +1,29 @@
-<div class="container  justify-content-center align-items-center img-details mt-5">
-    <article class="d-flex justify-content-center align-items-center">
-        <img [src]="zoneTourist?.image" loading="lazy" class="img-details">
-    </article>
+<div class="container  img-details mt-5">
+    <div class="container">
+        <article class="d-flex justify-content-center align-items-center">
+            <img [src]="zoneTourist?.image" loading="lazy" class="img-details img-fluid">
+        </article>
+    </div>
+    
     <div class="container">
         <h2>{{zoneTourist?.nom}}</h2>
         <p><strong>Pays: </strong>{{zoneTourist?.pays}}</p>
         <p><strong>Ville: </strong>{{zoneTourist?.ville}}</p>
         <p><strong>Description: </strong>{{zoneTourist?.descriptionLong}}</p>
-    </div>
+        <h1 class="text-center">Gallerie</h1>
+        <div class="container overflow-auto" style="white-space: nowrap;">
+            <div class="d-flex flex-nowrap" style="gap: 10px;">
+                <img [src]="zoneTourist?.img1" class="img-thumbnail imgdt" >
+                <img [src]="zoneTourist?.img2" class="img-thumbnail imgdt" >
+                <img [src]="zoneTourist?.img3" class="img-thumbnail imgdt" >
+                <img [src]="zoneTourist?.img4" class="img-thumbnail imgdt" >
+                <img [src]="zoneTourist?.img5" class="img-thumbnail imgdt" >
+                <img [src]="zoneTourist?.img6" class="img-thumbnail imgdt" >
+                <img [src]="zoneTourist?.img7" class="img-thumbnail imgdt" >
+                <img [src]="zoneTourist?.img8" class="img-thumbnail imgdt">
+                <img [src]="zoneTourist?.img9" class="img-thumbnail imgdt">
+                <img [src]="zoneTourist?.img10" class="img-thumbnail imgdt">
+            </div>
+        </div>
+</div>
 </div>
